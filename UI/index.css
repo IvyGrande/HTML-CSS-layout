@@ -1,0 +1,450 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f3f3;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 5px 5px 0 rgb(232, 231, 231);}
+
+.header img {
+    margin-top: 10px;
+    align-items: center;
+    height: 25px;
+}
+.header .setting {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    align-items: center;
+    right: 200px;}
+
+.header .setting img {
+    height: 35px;
+    border-radius: 50%;
+}
+
+.header .sign {
+    margin: 20px 0 0 15px;
+    width: 10px;
+    height: 10px;
+    border: #999 solid;
+    border-width: 3px 3px 0 0;
+    transform: rotate(135deg);
+    margin-bottom: 10px;
+}
+.header ul li {
+    display: none;
+}
+
+.header .sign:hover ul li {
+    display: block;
+}
+
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    height: auto;}
+
+.main .left {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 1100px;
+    width: 20%;
+    background-color: #2d4054;}
+
+.main .left img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.main .left .part {
+    margin: 20px 10px 0 20px;
+    height: 45px;
+    color: white;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+}
+.main .left .part:hover {
+    width: 120px;
+    margin-left: 40px;
+
+}
+
+.main .left .back {
+    font-size: 12px;
+    color: #999;
+    margin-left: 15px;
+}
+
+.main .left .back a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    margin-bottom: 5px;
+    height: 20px;
+    line-height: 10px;
+    color: #999;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.main .right {
+    width: 77%;
+    height: 1000px;}
+
+.main .right .top {
+    justify-content: space-between;
+    display: flex;
+    margin: 0;}
+
+.main .right .top .icon {
+    margin-top: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    -webkit-transform: rotate(360deg);
+    animation: rotation 3s linear infinite;
+    -moz-animation: rotation 3s linear infinite;
+    -webkit-animation: rotation 3s linear infinite;
+    -o-animation: rotation 3s linear infinite;
+}
+
+.main .right .top .text {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.main .right .top .icon {
+    width: 70px;
+}
+
+.main .right .top .num {
+    color: white;
+    font-weight: 100;
+    margin: 10px;
+    align-self: flex-end;
+    font-size: 48px
+}
+
+
+.main .right .part1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 31%;
+    height: 130px;
+    margin: 20px 20px 0px 0px;
+    background-color: #ff9a2a;
+}
+
+
+@-webkit-keyframes rotation {
+
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+
+}
+
+
+
+.main .right .part2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 31%;
+    height: 130px;
+    margin: 20px 20px 0px 0px;
+    background-color: #7fbc39;
+}
+
+.main .right .part3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 31%;
+    height: 130px;
+    margin: 20px 0px 0px 0px;
+    background-color: white;
+
+
+}
+
+.main .right .part3 ul {
+    line-height: 30px;
+}
+
+.main .right .part3 .divide {
+    text-align: center;
+    margin: 0;
+    padding: 0;}
+
+.main .right .part3 .divide .text {
+    color: #999;
+    font-size: 12px;
+}
+
+
+
+
+
+.main .right .part3 .divide .num {
+    font-size: 20px;
+    color: #2d4054;
+}
+
+.main .right .nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px 0px 0px;
+    background-color: white;
+    padding: 0;
+}
+
+.main .right .nav .tap {
+    width: 10%;
+    flex-direction: row;
+    color: #2d4054;
+    border-right-style: solid;
+    border-color: rgb(235, 232, 232);
+    line-height: 50px;
+    text-align: center;
+}
+
+.main .right .nav .tap a {
+    text-decoration: none;
+    color: #2d4054;
+}
+
+.main .right .nav .tap:hover {
+    color: #00b4cf;
+    border-bottom-style: solid;
+    border-bottom-color: #00b4cf;
+    border-bottom-width: 3px;
+}
+
+.main .right .nav .find {
+    position: relative;
+    height: 30px;
+    width: 60px;
+    margin-left: 20px;
+}
+
+.main .right .nav .find img {
+    top: 10px;
+    position: absolute;
+    height: 20px;
+    left: 10px;
+}
+
+.main .right .nav input {
+    height: 30px;
+    background-color: #f3f3f3;
+    border: 0;
+}
+
+.main .right .nav .select img {
+    height: 40px;
+    position: absolute;
+    right: 200px;
+    margin-top: -20px;
+}
+
+.main .right .page {
+    flex-direction: column;
+}
+
+.main .right .board {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 130px;
+    margin: 20px 0 0 0;
+}
+
+.main .right .board .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 10%;
+    background-color: white;
+    height: 130px;
+    margin: 0;
+
+}
+
+.main .right .board .logo img {
+    height: 80px;
+}
+
+.main .right .board .content {
+    width: 90%;
+    background-color: white;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .right .board .content .up {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 65px;
+    background-color: white;
+    width: 100%;
+}
+
+.main .right .board .content .up img {
+    height: 30px;
+    margin-left: 20px;
+}
+
+.main .right .board .content .up .link {
+    margin: 15px;
+    line-height: 30px;
+}
+
+.main .right .board .content .up .link a {
+    text-decoration: none;
+    color: rgb(95, 187, 210);
+    font-size: 14px;
+}
+
+.main .right .board .content .up .state1 {
+    color: white;
+    width: 40px;
+    text-align: center;
+    margin: 0 100px 0 10px;
+    background-color: #7fbc39;
+}
+
+.main .right .board .content .up .state2 {
+    color: white;
+    width: 60px;
+    text-align: center;
+    margin: 0 100px 0 10px;
+    background-color: #ff9a2a;
+}
+
+.main .right .board .content .up img {
+    margin-left: 30px;
+    height: 20px;
+}
+
+.main .right .board .content .up .site {
+
+    color: #2d4054;
+}
+
+.main .right .board .content .up .folder {
+    color: #2d4054;
+}
+
+.main .right .board .content .down {
+    display: flex;
+    flex-direction: row;
+}
+
+.main .right .board .content .down .add {
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
+.main .right .board .content .down .add img {
+    height: 30px;
+}
+
+.main .right .board .content .down .net {
+    margin-right: 10px;
+    height: 30px;
+    width: 75px;
+    display: flex;
+    line-height: 30px;
+    padding-left: 5px;
+    flex-direction: row;
+    position: relative;
+    background-color: #f3f3f3;
+}
+
+.main .right .board .content .down .net img {
+    margin-top: 3px;
+    height: 23px;
+    justify-content: space-between;
+    position: absolute;
+    right: 0;
+}
+
+.main .right .board .content .down .deny {
+    height: 30px;
+    width: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    background-color: #00b4cf;
+    justify-self: self-end;
+    right: 220px;
+}
+
+.main .right .board .content .down .deny img {
+    height: 23px;
+    margin: 5px;
+    position: absolute;
+    margin-top: -10px;
+}
+
+.main .right .board .content .down .deny .text {
+    color: white;
+    margin-right: 16px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    text-align: center;
+    line-height: 30px;
+    color: #999;
+    font-size: 12px;
+    box-shadow: 0 0px 6px 0 rgb(194, 193, 193);
+}
+
